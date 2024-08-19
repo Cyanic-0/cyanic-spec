@@ -93,21 +93,21 @@ importers:
       cross-spawn:
         specifier: ^7.0.3
         version: 7.0.3
+      cyanic-commitlint-config:
+        specifier: ^1.0.0
+        version: link:../commitlint-config
+      cyanic-eslint:
+        specifier: ^1.0.0
+        version: link:../eslint-config
+      cyanic-markdownlint-config:
+        specifier: ^1.0.0
+        version: link:../markdownlint-config
+      cyanic-stylelint-config:
+        specifier: ^1.0.0
+        version: link:../stylelint-config
       ejs:
         specifier: ^3.1.5
         version: 3.1.9
-      encode-fe-commitlint-config:
-        specifier: ^1.0.0
-        version: link:../commitlint-config
-      encode-fe-eslint-config:
-        specifier: ^1.0.0
-        version: link:../eslint-config
-      encode-fe-markdownlint-config:
-        specifier: ^1.0.0
-        version: link:../markdownlint-config
-      encode-fe-stylelint-config:
-        specifier: ^1.0.0
-        version: 1.0.8(stylelint-scss@4.7.0)(stylelint@14.16.1)
       eslint:
         specifier: ^8.7.0
         version: 8.7.0
@@ -3842,7 +3842,6 @@ packages:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@typescript-eslint/parser@5.59.8(eslint@8.7.0)(typescript@4.9.5):
     resolution: {integrity: sha512-AnR19RjJcpjoeGojmwZtCwBX/RidqDZtzcbG3xHrmz0aHHoOcbWnpDllenRDmDvsV0RQ6+tbb09/kyc+UT9Orw==}
@@ -3869,7 +3868,6 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.0.0
       '@typescript-eslint/visitor-keys': 5.0.0
-    dev: true
 
   /@typescript-eslint/scope-manager@5.59.8:
     resolution: {integrity: sha512-/w08ndCYI8gxGf+9zKf1vtx/16y8MHrZs5/tnjHhMLNSixuNcJavSX4wAiPf4aS5x41Es9YPCn44MIe4cxIlig==}
@@ -3900,7 +3898,6 @@ packages:
   /@typescript-eslint/types@5.0.0:
     resolution: {integrity: sha512-dU/pKBUpehdEqYuvkojmlv0FtHuZnLXFBn16zsDmlFF3LXkOpkAQ2vrKc3BidIIve9EMH2zfTlxqw9XM0fFN5w==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
 
   /@typescript-eslint/types@5.59.8:
     resolution: {integrity: sha512-+uWuOhBTj/L6awoWIg0BlWy0u9TyFpCHrAuQ5bNfxDaZ1Ppb3mx6tUigc74LHcbHpOHuOTOJrBoAnhdHdaea1w==}
@@ -3925,7 +3922,6 @@ packages:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@typescript-eslint/typescript-estree@5.59.8(typescript@4.9.5):
     resolution: {integrity: sha512-Jy/lPSDJGNow14vYu6IrW790p7HIf/SOV1Bb6lZ7NUkLc2iB2Z9elESmsaUtLw8kVqogSbtLH9tut5GCX1RLDg==}
@@ -3972,7 +3968,6 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.0.0
       eslint-visitor-keys: 3.4.1
-    dev: true
 
   /@typescript-eslint/visitor-keys@5.59.8:
     resolution: {integrity: sha512-pJhi2ms0x0xgloT7xYabil3SGGlojNNKjK/q6dB3Ey0uJLMjK2UDGJvHieiyJVW/7C3KI+Z4Q3pEHkm4ejA+xQ==}
@@ -7642,16 +7637,6 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
-  /encode-fe-stylelint-config@1.0.8(stylelint-scss@4.7.0)(stylelint@14.16.1):
-    resolution: {integrity: sha512-oFUlp7u0wD1oEaQSBc1dJJHsKdEC7UA8Slwyvqad6iAG1vATZR8VFDbEOmBrUR2xXe1+30QAfCcZOooVV5IifA==}
-    peerDependencies:
-      stylelint: '>=8.3.0'
-      stylelint-scss: '>=2.0.0'
-    dependencies:
-      stylelint: 14.16.1
-      stylelint-scss: 4.7.0(stylelint@14.16.1)
-    dev: false
-
   /encodeurl@1.0.2:
     resolution: {integrity: sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==}
     engines: {node: '>= 0.8'}
@@ -8069,7 +8054,7 @@ packages:
     dependencies:
       debug: 4.3.4(supports-color@6.1.0)
       eslint: 8.7.0
-      eslint-plugin-import: 2.27.5(@typescript-eslint/parser@5.59.8)(eslint-import-resolver-typescript@2.5.0)(eslint@8.7.0)
+      eslint-plugin-import: 2.27.5(@typescript-eslint/parser@5.0.0)(eslint-import-resolver-typescript@2.5.0)(eslint@8.7.0)
       glob: 7.2.3
       is-glob: 4.0.3
       resolve: 1.22.2
@@ -8105,7 +8090,6 @@ packages:
       eslint-import-resolver-typescript: 2.5.0(eslint-plugin-import@2.27.5)(eslint@8.7.0)
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /eslint-module-utils@2.8.0(@typescript-eslint/parser@5.59.8)(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@2.5.0)(eslint@8.7.0):
     resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
@@ -8190,7 +8174,6 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
-    dev: true
 
   /eslint-plugin-import@2.27.5(@typescript-eslint/parser@5.59.8)(eslint-import-resolver-typescript@2.5.0)(eslint@8.7.0):
     resolution: {integrity: sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==}
@@ -9382,6 +9365,7 @@ packages:
 
   /glob@7.1.4:
     resolution: {integrity: sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -9393,6 +9377,7 @@ packages:
 
   /glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -9404,6 +9389,7 @@ packages:
 
   /glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -9415,6 +9401,7 @@ packages:
   /glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -15744,6 +15731,7 @@ packages:
 
   /rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3

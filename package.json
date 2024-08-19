@@ -1,5 +1,5 @@
 {
-  "name": "encode-fe-spec",
+  "name": "cyanic-spec",
   "private": true,
   "description": "cyanic--前端编码规范工程化",
   "scripts": {
@@ -19,7 +19,7 @@
     "encode",
     "fe spec"
   ],
-  "author": "chenghuai",
+  "author": "Ashley",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",

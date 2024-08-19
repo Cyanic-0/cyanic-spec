@@ -1,14 +1,14 @@
-import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config';
 
+import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config';
 export default defineConfig4CustomTheme({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '印客学院',
+      title: 'cyanic-lint',
       description: '前端编码规范工程化',
     },
   },
-  base: '/fe-spec/',
+  base: '/cyanic-spec/',
   themeConfig: {
     nav: [
       { text: '首页', link: '/index.md' },
@@ -33,16 +33,16 @@ export default defineConfig4CustomTheme({
       {
         text: 'NPM包',
         items: [
-          { text: 'encode-fe-eslint-config', link: '/npm/eslint.md' },
-          { text: 'encode-fe-stylelint-config', link: '/npm/stylelint.md' },
-          { text: 'encode-fe-commitlint-config', link: '/npm/commitlint.md' },
-          { text: 'encode-fe-markdownlint-config', link: '/npm/markdownlint.md' },
-          { text: 'encode-fe-eslint-plugin', link: '/npm/eslint-plugin.md' },
+          { text: 'cyanic-eslint-config', link: '/npm/eslint.md' },
+          { text: 'cyanic-stylelint-config', link: '/npm/stylelint.md' },
+          { text: 'cyanic-commitlint-config', link: '/npm/commitlint.md' },
+          { text: 'cyanic-markdownlint-config', link: '/npm/markdownlint.md' },
+          { text: 'cyanic-eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
         text: '脚手架',
-        items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
+        items: [{ text: 'cyanic-lint', link: '/cli/cyanic-lint.md' }],
       },
     ],
     sidebar: [
@@ -91,34 +91,20 @@ export default defineConfig4CustomTheme({
       {
         title: 'NPM包',
         children: [
-          { title: 'encode-fe-eslint-config', path: '/npm/eslint.md' },
-          { title: 'encode-fe-stylelint-config', path: '/npm/stylelint.md' },
-          { title: 'encode-fe-commitlint-config', path: '/npm/commitlint.md' },
-          { title: 'encode-fe-markdownlint-config', path: '/npm/markdownlint.md' },
-          { title: 'encode-fe-eslint-plugin', path: '/npm/eslint-plugin.md' },
+          { title: 'cyanic-eslint-config', path: '/npm/eslint.md' },
+          { title: 'cyanic-stylelint-config', path: '/npm/stylelint.md' },
+          { title: 'cyanic-commitlint-config', path: '/npm/commitlint.md' },
+          { title: 'cyanic-markdownlint-config', path: '/npm/markdownlint.md' },
+          { title: 'cyanic-eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
       },
       {
         title: '脚手架',
-        children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
+        children: [{ title: 'cyanic-lint', path: '/cli/cyanic-lint.md' }],
       },
     ],
-    logo: '/img/logo.png',
-    repo: 'encode-studio-fe/fe-spec',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
-    footer: {
-      createYear: 2023,
-      copyrightInfo:
-        'encode studio | <a href="https://github.com/encode-studio-fe/fe-spec" target="_blank">github</a>',
-    },
-
-    extendFrontmatter: {
-      author: {
-        name: '澄怀',
-        link: 'https://github.com/encode-studio-fe/fe-sepc',
-      },
-    },
   },
 
   head: [

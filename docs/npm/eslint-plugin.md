@@ -1,20 +1,20 @@
 ---
-title: encode-fe-eslint-plugin
+title: cyanic-eslint-plugin
 categories:
   - 工程规范
 tags:
   - 工程规范
 author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+  name: Ashley
+  link: https://github.com/Cyanic-0/cyanic-spec
 ---
 
-# encode-fe-eslint-plugin
+# cyanic-eslint-plugin
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install encode-fe-eslint-plugin eslint --save-dev
+$ npm install cyanic-eslint-plugin eslint --save-dev
 ```
 
 ## 使用
@@ -24,9 +24,9 @@ $ npm install encode-fe-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['encode-fe-eslint-config'],
+  plugin: ['cyanic-eslint-config'],
   rules: {
-    'encode-fe-eslint-plugin/no-secret-info': 'error',
+    'cyanic-eslint-plugin/no-secret-info': 'error',
   },
 };
 ```
@@ -36,7 +36,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:encode-fe-eslint-plugin/recommended',
+  extends: 'plugin:cyanic-eslint-plugin/recommended',
 };
 ```
 

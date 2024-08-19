@@ -5,8 +5,8 @@ categories:
 tags:
   - 工程规范
 author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+  name: 吕璇
+  link: https://github.com/Cyanic-0/cyanic-spec
 ---
 
 # CHANGELOG 规范
