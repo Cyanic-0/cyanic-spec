@@ -1,11 +1,11 @@
 {
   "name": "cyanic-spec",
   "private": true,
-  "description": "cyanic--前端编码规范工程化",
+  "description": "前端编码规范工程化",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install",
-    "init": "pnpm install",
+    "prepare": "husky install ",
+    "init": "pnpm install --no-frozen-lockfile",
     "clean": "lerna clean && rm -rf node_modules",
     "test": "lerna run test",
     "docs:dev": "vuepress dev docs",

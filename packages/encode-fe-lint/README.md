@@ -1,6 +1,6 @@
 # cyanic-lint
 
-`cyanic-lint` 是[前端编码规范工程化](https://github.com/Cyanic-0/cyanic-spec)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
+`cyanic-lint` 是[前端编码规范工程化]的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
 
 ## 背景
 

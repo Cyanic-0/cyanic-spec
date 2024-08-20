@@ -37,7 +37,6 @@ export default defineConfig4CustomTheme({
           { text: 'cyanic-stylelint-config', link: '/npm/stylelint.md' },
           { text: 'cyanic-commitlint-config', link: '/npm/commitlint.md' },
           { text: 'cyanic-markdownlint-config', link: '/npm/markdownlint.md' },
-          { text: 'cyanic-eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
@@ -95,7 +94,6 @@ export default defineConfig4CustomTheme({
           { title: 'cyanic-stylelint-config', path: '/npm/stylelint.md' },
           { title: 'cyanic-commitlint-config', path: '/npm/commitlint.md' },
           { title: 'cyanic-markdownlint-config', path: '/npm/markdownlint.md' },
-          { title: 'cyanic-eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
       },
       {
