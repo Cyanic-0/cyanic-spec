@@ -17,7 +17,7 @@ actionLink: /coding/html.md
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [cyanic-stylelint-config](https://www.npmjs.com/package/cyanic-stylelint-config)       |
 | Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [cyanic-commitlint-config](https://www.npmjs.com/package/cyanic-commitlint-config)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [cyanic-markdownlint-config](https://www.npmjs.com/package/cyanic-markdownlint-config) |
-| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [cyanic-eslint-plugin](https://www.npmjs.com/package/cyanic-eslint-plugin)             |
+
 
 [cyanic-lint](https://www.npmjs.com/package/cyanic-lint) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
